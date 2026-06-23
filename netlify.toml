@@ -1,0 +1,9 @@
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+
+# Trang dùng định tuyến nội bộ (hash/JS) nên không cần redirect đặc biệt.
